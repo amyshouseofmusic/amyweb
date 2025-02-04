@@ -1,0 +1,51 @@
+body {
+    background-color: #335;
+    background-image: url("images/bg.png");
+}
+body {
+    font-family: Arial;
+    font-size: 20px;
+    color: white;
+}
+    .middle {
+        width: 45%;
+        margin: auto;
+        background-color: #334;
+    }
+        section {
+            width: 100%
+        }
+        section img {
+            width: 50%;
+        }
+        div {
+            text-align: center;
+          }
+.sidenav a {
+	position: absolute;
+	left: -150px;
+	transition: 0.3s;
+	padding: 15px;
+	width: 150px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+}
+
+.sidenav a:hover {
+	left: 0;
+}
+.contact {
+	top: 20px;
+	background-color: DarkCyan;
+}
+.pricing {
+	top: 80px;
+	background-color: Orange;
+}
+.remote {
+	top: 140px;
+	background-color: Firebrick;
+}
+a:link {
+color: yellow; /* Unvisited link */
