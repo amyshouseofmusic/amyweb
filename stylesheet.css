@@ -51,12 +51,12 @@ nav ul li a{
 }
 nav ul li a:hover,
 nav ul li a.active{
-  color: #23dbdb;
+  color: #335;
 }
 nav ul ul{
   position: absolute;
   top: 85px;
-  border-top: 3px solid #23dbdb;
+  border-top: 3px solid #335;
   opacity: 0;
   visibility: hidden;
 }
@@ -124,7 +124,7 @@ nav ul li a{
 }
 nav ul li a:hover,
 nav ul li a.active{
-  color: #ea0053;
+  color: #335;
 }
 nav ul ul{
   position: absolute;
