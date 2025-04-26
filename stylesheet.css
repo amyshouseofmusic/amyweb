@@ -21,31 +21,237 @@ body {
         div {
             text-align: center;
           }
-.sidenav a {
-	position: absolute;
-	left: -150px;
-	transition: 0.3s;
-	padding: 15px;
-	width: 150px;
-	text-decoration: none;
-	font-size: 20px;
-	color: white;
+nav .logo{
+  color: white;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 110px;
 }
-.sidenav a:hover {
-	left: 0;
+nav{
+  height: 70px;
+  background: #000;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
 }
-.home {
-	top: 20px;
-	background-color: green;
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  color: white;
+  display: block;
+  padding: 0 15px;
+  line-height: 70px;
+  font-size: 20px;
+  background: #000;
+  transition: .5s;
+}
+nav ul li a:hover,
+nav ul li a.active{
+  color: #23dbdb;
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #23dbdb;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 1px solid #042331;
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ul ul li a i{
+  margin-left: 45px;
+}
+section{
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
-.contact {
-	top: 80px;
-	background-color: LightSeaGreen;
+@media (max-width: 950px){
+  nav .logo{
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 60px;
+  padding-left: 20px;
+}
+nav{
+  height: 60px;
+  background: #000;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  color: white;
+  display: block;
+  padding: auto;
+  line-height: 60px;
+  font-size: 16px;
+  background: #000;
+  transition: .5s;
+}
+nav ul li a:hover,
+nav ul li a.active{
+  color: #ea0053;
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #ea0053;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  top: 60px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 1px solid #042331;
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+nav ul ul li a i{
+  margin-left: 45px;
+}
+section{
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
 }
 
-.pricing {
-	top: 140px;
-	background-color: steelblue;
+@media (max-width: 800px){
+  nav .logo{
+  /*color: white;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 60px;
+  padding-left: 20px;*/
+    display: none;
+}
+nav{
+  height: 60px;
+  background: #000;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  color: white;
+  display: block;
+  padding: auto;
+  line-height: 60px;
+  font-size: 16px;
+  background: #000;
+  transition: .5s;
+}
+nav ul li a:hover,
+nav ul li a.active{
+  color: #23dbdb;
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #23dbdb;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  top: 60px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 1px solid #042331;
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+nav ul ul li a i{
+  margin-left: 45px;
+}
+section{
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
 }
 
+
+.title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  text-align: center;
+  width: 100%;
+  color: #202020;
+  font-size: 40px;
+  font-weight: 700;
+}
