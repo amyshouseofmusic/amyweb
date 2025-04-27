@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Amy's House of Music</title>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="logo.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+  <img src="logo.jpg" width="80px" height="80px"</img>
+  <br>
+    <h3 class="w3-padding-64"><b>Amy's House<br>of Music</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pricing</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Amy's House of Music</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Welcome to</b></h1>
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Amy's House of Music!</b></h1>
+    <hr style="width:50px;border:5px solid " class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+	<img src="logo.jpg"</img>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Services</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <h3>At Amy's House of Music we offer one-on-one Piano and Drum lessons to elementary and high school level students, located right in the heart of Canastota, NY. Scheduling is limited and by appointment only :)</h3>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Pricing</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <h1>Payment Options</h1>
+		<h6>*Please note that a $10 late fee will be applied if you pay any later than the 9th of the month. If you pay weekly and do not bring payment at the time of lessons, you will also be asked to pay a $5 late fee.</h6>
+        <h3>Weekly Payment for one (1) half hour lesson per week: $20.00</h3>
+
+<h3>Monthly Payment for one(1) half hour lesson per week: $85.00
+(Small savings each month)</h3>
+
+<h3>Monthly Payment for one (1) 45 minute lesson per week: $130.00
+(Small savings each month)</h3>
+
+<h3>Monthly Payment for one (1) 1 Hour lesson per week:  $180.00 monthly</h3>
+<br>
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Contact</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <h3>Ready to get started? Great! Just send an EMail and we can get things going.</h3>
+	<br>
+	<h5>EMail: contact@amyshouseofmusic.com</h5>
+	<h5>Phone #: (not listed for privacy reasons)</h5>
+	<br>
+	<div id="fb-root"></div>
+<script async="1" defer="1" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script><div class="fb-page" data-href="https://www.facebook.com/AmysHouseOfMusic" data-height="500" data-small-header="" data-adapt-container-width="1" data-hide-cover="" data-show-facepile="" data-show-posts="true" data-width="600"><blockquote cite="https://www.facebook.com/AmysHouseOfMusic" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/AmysHouseOfMusic">Amy's House of Music</a></blockquote></div>
+<br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.1562790058065!2d-75.75304412454521!3d43.080209689302436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d99d050c4e1105%3A0x9abe52c4d87a73f7!2s112%20Diamond%20St%2C%20Canastota%2C%20NY%2013032!5e0!3m2!1sen!2sus!4v1745768483705!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
